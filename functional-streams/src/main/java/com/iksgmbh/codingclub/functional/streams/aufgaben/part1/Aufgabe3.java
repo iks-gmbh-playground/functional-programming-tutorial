@@ -7,7 +7,11 @@ import java.util.Set;
 
 import static com.iksgmbh.codingclub.functional.streams.aufgaben.part1.domain.Fahrzeugklasse.*;
 
+/**
+ * Ich suche alle LKW aus Köln :)
+ */
 public class Aufgabe3 {
+
     public static void main(String[] args) {
         var parkplatz = new Parkplatz("Wiesenstraße", Set.of(
                 new Fahrzeug(LKW, "MAN", "D-FS 1234"),
@@ -24,7 +28,5 @@ public class Aufgabe3 {
                 new Fahrzeug(MOTORRAD, "Suzuki", "K-KS 221"),
                 new Fahrzeug(MOTORRAD, "BMW", "D-JS 2311")
         ));
-
-        // Ich suche alle LKW aus Köln :)
     }
 }

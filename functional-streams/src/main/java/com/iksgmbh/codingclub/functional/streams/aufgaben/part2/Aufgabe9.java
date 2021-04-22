@@ -12,7 +12,17 @@ import java.util.stream.Collectors;
 import static com.iksgmbh.codingclub.functional.streams.aufgaben.part2.domain.Fahrzeugklasse.*;
 import static java.util.stream.Collectors.groupingBy;
 
+/**
+ * MasterClass - Das Kennzeichen ist jetzt leider kein String mehr, sondern Optional. Oben versteckt sich ein
+ * Fahrzeug, was bereits abgemeldet wurde, sprich, kein Kennzeichen mehr besitzt. Nullst du noch, oder
+ * Optionalst du schon? :)
+ * <p>
+ * Jetzt gehts ans eingemachte!
+ * Ich hätte gerne, dass du mir alle Kennzeichen holst und anhand der Kennzeichen die Städte du kennst (Kennzeichenbestimmer)
+ * der dort parkenden Fahrzeuge sammelst und zusammenzählst. :) Heavy shit...
+ */
 public class Aufgabe9 {
+
     public static void main(String[] args) {
         var wiesenstr = new Parkplatz("Wiesenstraße", Set.of(
                 new Fahrzeug(LKW, "MAN", "D-FS 1234"),
@@ -35,13 +45,6 @@ public class Aufgabe9 {
         ));
         var alleParkplaetze = Set.of(wiesenstr, elisenstr, gruenstr);
 
-        // MasterClass - Das Kennzeichen ist jetzt leider kein String mehr, sondern Optional. Oben versteckt sich ein
-        // Fahrzeug, was bereits abgemeldet wurde, sprich, kein Kennzeichen mehr besitzt. Nullst du noch, oder
-        // Optionalst du schon? :)
-
-        // Jetzt gehts ans eingemachte!
-        // Ich hätte gerne, dass du mir alle Kennzeichen holst und anhand der Kennzeichen die Städte du kennst (Kennzeichenbestimmer)
-        // der dort parkenden Fahrzeuge sammelst und zusammenzählst. :) Heavy shit...
         var kennzeichen = alleParkplaetze.stream()
                 .flatMap(p -> p.getFahrzeuge().stream())
                 .map(Fahrzeug::getKennzeichen)
@@ -50,7 +53,5 @@ public class Aufgabe9 {
                 .flatMap(Optional::stream)
                 .collect(groupingBy(Function.identity(), Collectors.counting()));
         kennzeichen.forEach((key, values) -> System.out.println(key + ": " + values));
-
-
     }
 }

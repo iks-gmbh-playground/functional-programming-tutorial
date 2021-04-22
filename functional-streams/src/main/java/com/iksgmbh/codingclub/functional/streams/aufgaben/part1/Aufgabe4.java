@@ -7,7 +7,12 @@ import java.util.Set;
 
 import static com.iksgmbh.codingclub.functional.streams.aufgaben.part1.domain.Fahrzeugklasse.*;
 
+/**
+ * Hier parken se alle schon wieder wie Kraut und Rüben... Ich würde die Fahrzeuge gerne anders aufteilen.
+ * Dafür bräuchte ich einmal die Fahrzeuge gruppiert nach ihrer Fahrzeugklasse
+ */
 public class Aufgabe4 {
+
     public static void main(String[] args) {
         var parkplatz = new Parkplatz("Wiesenstraße", Set.of(
                 new Fahrzeug(LKW, "Iveco", "K-AC 2332"),
@@ -24,9 +29,5 @@ public class Aufgabe4 {
                 new Fahrzeug(PKW, "Audi", "D-MM 3784"),
                 new Fahrzeug(MOTORRAD, "BMW", "D-JS 2311")
         ));
-
-        // Hier parken se alle schon wieder wie Kraut und Rüben... Ich würde die Fahrzeuge gerne anders aufteilen.
-        // Dafür bräuchte ich einmal die Fahrzeuge gruppiert nach ihrer Fahrzeugklasse
-
     }
 }

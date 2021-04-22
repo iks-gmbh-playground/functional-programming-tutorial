@@ -7,6 +7,9 @@ import java.util.Set;
 
 import static com.iksgmbh.codingclub.functional.streams.aufgaben.part1.domain.Fahrzeugklasse.*;
 
+/**
+ * Und noch einmal gruppieren nach Fahrzeugklasse und dann die Menge der Fahrzeuge pro Klasse zählen :)
+ */
 public class Aufgabe7 {
     public static void main(String[] args) {
         var wiesenstr = new Parkplatz("Wiesenstraße", Set.of(
@@ -29,7 +32,5 @@ public class Aufgabe7 {
                 new Fahrzeug(PKW, "Audi", "D-MM 3784")
         ));
         var alleParkplaetze = Set.of(wiesenstr, elisenstr, gruenstr);
-
-        // Und noch einmal gruppieren nach Fahrzeugklasse und dann die Menge der Fahrzeuge pro Klasse zählen :)
     }
 }

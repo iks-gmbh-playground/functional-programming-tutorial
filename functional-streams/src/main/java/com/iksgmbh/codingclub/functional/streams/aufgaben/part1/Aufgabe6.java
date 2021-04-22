@@ -7,7 +7,11 @@ import java.util.Set;
 
 import static com.iksgmbh.codingclub.functional.streams.aufgaben.part1.domain.Fahrzeugklasse.*;
 
+/**
+ * Wie viele Fahrzeuge sind auf allen Parkplätzen??? Na, wer weiss es...
+ */
 public class Aufgabe6 {
+
     public static void main(String[] args) {
         var wiesenstr = new Parkplatz("Wiesenstraße", Set.of(
                 new Fahrzeug(LKW, "MAN", "D-FS 1234"),
@@ -29,9 +33,5 @@ public class Aufgabe6 {
                 new Fahrzeug(PKW, "Audi", "D-MM 3784")
         ));
         var alleParkplaetze = Set.of(wiesenstr, elisenstr, gruenstr);
-
-        // Wie viele Fahrzeuge sind auf allen Parkplätzen??? Na, wer weiss es...
-
-
     }
 }

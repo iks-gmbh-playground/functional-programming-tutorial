@@ -2,6 +2,11 @@ package com.iksgmbh.codingclub.functional.streams.aufgaben.part2;
 
 import java.util.Optional;
 
+/**
+ * Hier kannst du mal noch ein wenig tiefer in die Optional Api einsteigen.
+ * Hole von oben jeweils die 4 Kennzeichen, schmeiss es in den KennzeichenBestimmer und schaue nach, ob ein Ort dazu
+ * gefunden wurde :)
+ */
 public class Aufgabe8 {
 
     public static Optional<String> getKoelnerKennzeichen() {
@@ -22,8 +27,6 @@ public class Aufgabe8 {
 
 
     public static void main(String[] args) {
-        // Hier kannst du mal noch ein wenig tiefer in die Optional Api einsteigen.
-        // Hole von oben jeweils die 4 Kennzeichen, schmeiss es in den KennzeichenBestimmer und schaue nach, ob ein Ort dazu
-        // gefunden wurde :)
+
     }
 }

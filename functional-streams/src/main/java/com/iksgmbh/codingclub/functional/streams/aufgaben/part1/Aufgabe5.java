@@ -7,7 +7,12 @@ import java.util.Set;
 
 import static com.iksgmbh.codingclub.functional.streams.aufgaben.part1.domain.Fahrzeugklasse.*;
 
+/**
+ * So. Jetzt wollen wir mal mehrere Parkplätze betrachten und auswerten. Ein Set in einem Set. Muhahahaha!
+ * Finde mir die Fahrzeuge mit Kölner Kennzeichen, diesmal alle Fahrzeugklassen ;)
+ */
 public class Aufgabe5 {
+
     public static void main(String[] args) {
         var wiesenstr = new Parkplatz("Wiesenstraße", Set.of(
                 new Fahrzeug(LKW, "MAN", "D-FS 1234"),
@@ -29,9 +34,5 @@ public class Aufgabe5 {
                 new Fahrzeug(PKW, "Audi", "D-MM 3784")
         ));
         var alleParkplaetze = Set.of(wiesenstr, elisenstr, gruenstr);
-
-        // So. Jetzt wollen wir mal mehrere Parkplätze betrachten und auswerten. Ein Set in einem Set. Muhahahaha!
-        // Finde mir die Fahrzeuge mit Kölner Kennzeichen, diesmal alle Fahrzeugklassen ;)
-
     }
 }
