@@ -1,3 +1,4 @@
 rootProject.name = 'functional-programming-kata'
 include 'functional-basics'
+include 'functional-streams'
 
