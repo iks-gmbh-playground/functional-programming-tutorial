@@ -4,5 +4,5 @@ import com.iksgmbh.codingclub.functional.basics.aufgaben.part3.fahrzeug.Steuerun
 
 @FunctionalInterface
 public interface Route {
-    void fahren(Steuerung route);
+    void fahren(Steuerung steuerung);
 }

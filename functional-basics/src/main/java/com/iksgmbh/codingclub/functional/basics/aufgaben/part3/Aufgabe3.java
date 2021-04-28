@@ -1,6 +1,6 @@
 package com.iksgmbh.codingclub.functional.basics.aufgaben.part3;
 
-import com.iksgmbh.codingclub.functional.basics.aufgaben.part2.fahrzeug.Auto;
+import com.iksgmbh.codingclub.functional.basics.aufgaben.part3.fahrzeug.Auto;
 
 /**
  * Das sieht doch schon ganz geilo aus! Ein Problemchen nur noch. Ich möchte eigentlich aus convenience-Gründen

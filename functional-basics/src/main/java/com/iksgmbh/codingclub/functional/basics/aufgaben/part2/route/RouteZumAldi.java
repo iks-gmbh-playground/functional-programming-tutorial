@@ -4,9 +4,9 @@ import com.iksgmbh.codingclub.functional.basics.aufgaben.part2.fahrzeug.Steuerun
 
 public class RouteZumAldi implements Route {
     @Override
-    public void fahren(Steuerung route) {
+    public void fahren(Steuerung steuerung) {
         System.out.println("Lade Route zum Aldi");
-        route.geradeaus()
+        steuerung.geradeaus()
                 .links()
                 .rechts()
                 .anhalten();
