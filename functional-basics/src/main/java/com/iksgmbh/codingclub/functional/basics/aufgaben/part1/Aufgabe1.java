@@ -11,6 +11,9 @@ public class Aufgabe1 {
 
     public static void main(String[] args) {
         var auto = new Auto();
-        auto.fahren();
+        auto.fahren(steuerung -> {
+            steuerung.links();
+            steuerung.rechts().geradeaus().anhalten();
+        });
     }
 }

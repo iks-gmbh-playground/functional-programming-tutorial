@@ -1,5 +1,7 @@
 package com.iksgmbh.codingclub.functional.basics.aufgaben.part1.fahrzeug;
 
+import java.util.function.Consumer;
+
 public class Auto {
 
     private Steuerung steuerung = new Steuerung();
@@ -11,13 +13,11 @@ public class Auto {
         return this;
     }
 
-    public Auto fahren() {
+    public Auto fahren(Consumer<Steuerung> route) {
         starten().ausparken();
-        steuerung.geradeaus()
-                .links()
-                .rechts()
-                .anhalten();
-        einparken().stoppen();
+        route.accept(steuerung);
+        steuerung.anhalten();
+        stoppen();
         return this;
     }
 
