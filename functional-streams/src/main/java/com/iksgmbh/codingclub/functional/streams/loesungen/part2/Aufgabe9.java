@@ -42,6 +42,6 @@ public class Aufgabe9 {
                 .map(KennzeichenBestimmer::bestimmeOrt)
                 .flatMap(Optional::stream)
                 .collect(groupingBy(Function.identity(), Collectors.counting()));
-        kennzeichen.forEach((key, values) -> System.out.println(key + ": " + values));
+        kennzeichen.forEach((stadt, anzahl) -> System.out.println(stadt + ": " + anzahl));
     }
 }
